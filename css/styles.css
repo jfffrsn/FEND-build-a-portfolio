@@ -7,29 +7,59 @@
     --color-2: #2d3c49;
     --color-3: #7d97ad;
     font-family: "Nunito", sans-serif;
+    box-sizing: border-box;
 }
 
 body{
     background-color: #fff;
+    margin: 0;
+    padding: 0;
 }
 
 /* Header */
 .header {
     border-bottom: var(--color-3) 2px solid;
     margin: 0 0 2rem 0;
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: 50% 50%;
 }
 .header-logo{
     background-color: red;
+    align-self: center;
 }
+.header-logo-img{
+    width: 100%;
+    height: auto;
+    max-width: 100px;
+}
+
 .header-details{
     background-color: pink;
+    text-align: right;
+    align-self: center;
 }
-
-
+.header-details-title{
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.header-details-subtitle{
+    color: green;
+}
 /* Main */
 .main {
     background-color: var(--color-2);
 }
+
+
+.hero {
+    background-color: lime;
+}
+
+.featured {
+    background-color: aliceblue;
+}
+
 
 /* Footer */
 .footer {
