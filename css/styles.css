@@ -6,16 +6,17 @@
     --color-1: #02b3e4;
     --color-2: #2d3c49;
     --color-3: #7d97ad;
-    --color-1-dark: #007fa2;
-    --color-1-light: #3dd3fd;
-    font-family: "Nunito", sans-serif;
-    box-sizing: border-box;
+    --body-color: #303030;
 }
 
 body{
     background-color: #fff;
     margin: 0;
     padding: 0;
+    color: var(--body-color);
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
 }
 
 /*utility classes*/
@@ -37,32 +38,82 @@ body{
     margin: 0 0 2rem 0;
     display: grid;
     grid-gap: 0;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 100%;
     padding: 1.5rem 0;
 }
 .header-logo {
     align-self: center;
+    text-align: center;
 }
 .header-logo-img {
-    max-width: 100px;
+    max-width: 50px;
 }
 
 .header-details {
-    text-align: right;
+    text-align: center;
     align-self: center;
     color: var(--color-2);
 }
 .header-details-title {
     text-transform: uppercase;
-    font-weight: 300;
-    margin: .5rem 0;
+    font-weight: 400;
+    margin: .25rem 0;
+    font-size: 1.375rem;
 }
 .header-details-subtitle {
     text-transform: uppercase;
-    font-weight: 300;
-    font-size: 1.2rem;
-    margin: .5rem 0;
+    font-weight: 400;
+    margin: .25rem 0;
+    font-size: .875rem;
 }
+
+@media screen and (min-width: 500px) {
+    .header {
+        background-color: paleturquoise;
+        grid-template-columns: 50% 50%;
+    }
+    .header-logo {
+        text-align: left;
+    }
+    .header-logo-img {
+        max-width: 70px;
+    }
+    .header-details {
+        text-align: right;
+    }
+    .header-details-title {
+        font-weight: 300;
+        margin: .5rem 0;
+        font-size: 1.5rem;
+    }
+    .header-details-subtitle {
+        font-weight: 300;
+        font-size: 1rem;
+        margin: .5rem 0;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .header {
+        background-color: peachpuff;
+    }
+    .header-logo-img {
+        max-width: 100px;
+    }
+
+    .header-details-title {
+        font-weight: 300;
+        margin: .5rem 0;
+        font-size: 2rem;
+    }
+    .header-details-subtitle {
+        font-weight: 300;
+        font-size: 1.2rem;
+        margin: .5rem 0;
+    }
+}
+
+
 /* Main */
 .main {
 
@@ -106,16 +157,13 @@ body{
     border-radius: 3px;
     color: #fff;
     background-color: var(--color-1);
-    box-shadow: 0 2px 0 0 var(--color-1-dark);
     transition: .1s all linear;
 }
 
 .featured-list-btn:hover{
-    background-color: var(--color-1-light);
+    background-color: red;
 }
-.featured-list-btn:active {
-    box-shadow: 0 1px 0 0 var(--color-1-dark);
-}
+
 
 /* Footer */
 .footer {
