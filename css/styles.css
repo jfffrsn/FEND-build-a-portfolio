@@ -105,8 +105,13 @@ body{
 /* Footer */
 .footer {
     border-top: var(--color-2) 2px solid;
-    margin: 2rem 0;
+    margin: 2rem 0 0 0;
+    padding: 2rem 0;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+}
+.footer-para {
+    font-size: .85rem;
+    margin: .25rem 0;
 }
