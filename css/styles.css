@@ -48,6 +48,7 @@ body{
 .header-details {
     text-align: right;
     align-self: center;
+    color: var(--color-2);
 }
 .header-details-title {
     text-transform: uppercase;
@@ -55,7 +56,7 @@ body{
     margin: .5rem 0;
 }
 .header-details-subtitle {
-    color: green;
+    text-transform: uppercase;
     font-weight: 300;
     font-size: 1.2rem;
     margin: .5rem 0;
@@ -71,7 +72,6 @@ body{
 }
 
 .featured {
-    background-color: aliceblue;
     margin: 2rem 0;
 }
 .featured-title{
@@ -87,9 +87,23 @@ body{
     grid-gap: 3rem;
     grid-template-columns: 1fr 1fr 1fr;
 }
-
+.featured-list-item{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.featured-list-title {
+    color: var(--color-3);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.featured-list-btn{
+    border: 0;
+    background-color: pink;
+}
 
 /* Footer */
 .footer {
-    background-color: var(--color-3);
+    border-top: var(--color-2) 2px solid;
+    margin: 2rem 0;
 }
