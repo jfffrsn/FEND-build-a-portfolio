@@ -96,9 +96,6 @@ body{
 }
 
 @media screen and (min-width: 850px) {
-    .header {
-
-    }
     .header-logo-img {
         max-width: 100px;
     }
@@ -139,9 +136,22 @@ body{
     margin: 0;
     padding: 0;
     display: grid;
-    grid-gap: 3rem;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0;
+    grid-template-columns: 1fr;
 }
+
+@media screen and (min-width: 500px) {
+    .featured-list{
+        grid-gap: 1.5rem;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (min-width: 850px) {
+    .featured-list{
+        grid-gap: 2rem;
+    }
+}
+
 .featured-list-item{
     display: flex;
     flex-flow: column wrap;
