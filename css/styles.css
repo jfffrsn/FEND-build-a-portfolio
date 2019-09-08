@@ -28,8 +28,13 @@ body{
 /*page*/
 
 .page {
-    max-width: 900px;
-    margin: 0 auto;
+    max-width: 890px;
+    margin: 0 2rem;
+}
+@media screen and (min-width: 850px) {
+    .page {
+        margin: 0 auto;
+    }
 }
 
 /* Header */
@@ -57,19 +62,18 @@ body{
 .header-details-title {
     text-transform: uppercase;
     font-weight: 400;
-    margin: .25rem 0;
+    margin: .15rem 0;
     font-size: 1.375rem;
 }
 .header-details-subtitle {
     text-transform: uppercase;
     font-weight: 400;
-    margin: .25rem 0;
+    margin: .15rem 0;
     font-size: .875rem;
 }
 
 @media screen and (min-width: 500px) {
     .header {
-        background-color: paleturquoise;
         grid-template-columns: 50% 50%;
     }
     .header-logo {
@@ -83,19 +87,19 @@ body{
     }
     .header-details-title {
         font-weight: 300;
-        margin: .5rem 0;
+        margin: .25rem 0;
         font-size: 1.5rem;
     }
     .header-details-subtitle {
         font-weight: 300;
         font-size: 1rem;
-        margin: .5rem 0;
+        margin: .25rem 0;
     }
 }
 
 @media screen and (min-width: 850px) {
     .header {
-        background-color: peachpuff;
+
     }
     .header-logo-img {
         max-width: 100px;
