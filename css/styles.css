@@ -106,4 +106,7 @@ body{
 .footer {
     border-top: var(--color-2) 2px solid;
     margin: 2rem 0;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
 }
