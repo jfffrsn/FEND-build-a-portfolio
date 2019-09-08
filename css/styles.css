@@ -6,14 +6,13 @@
     --color-1: #02b3e4;
     --color-2: #2d3c49;
     --color-3: #7d97ad;
-    --body-color: #303030;
 }
 
 body{
     background-color: #fff;
     margin: 0;
     padding: 0;
-    color: var(--body-color);
+    color: var(--color-2);
     font-family: "Nunito", sans-serif;
     font-size: 16px;
     box-sizing: border-box;
