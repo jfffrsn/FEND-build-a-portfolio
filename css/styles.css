@@ -25,7 +25,15 @@ body{
 }
 
 /*page*/
-
+.page {
+    display: grid;
+    grid-row-gap: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
 .page {
     max-width: 850px;
     margin: 0 2rem;
@@ -38,8 +46,8 @@ body{
 
 /* Header */
 .header {
+    grid-area: header;
     border-bottom: var(--color-3) 3px solid;
-    margin: 0 0 2rem 0;
     display: grid;
     grid-gap: 0;
     grid-template-columns: 100%;
@@ -114,20 +122,19 @@ body{
 
 /* Main */
 .main {
-
+    grid-area: main;
 }
 
-
 .hero {
-    margin: 2rem 0;
+    margin: 0 0 2rem 0;
 }
 
 .featured {
-    margin: 2rem 0;
+    margin: 0 0 2rem 0;
 }
 .featured-title{
     color: var(--color-3);
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 .featured-list{
@@ -155,7 +162,12 @@ body{
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+    margin: 0 0 2rem 0;
 }
+.featured-list-item:last-of-type{
+    margin-bottom: 0;
+}
+
 .featured-list-title {
     color: var(--color-3);
     font-size: 1rem;
@@ -178,8 +190,8 @@ body{
 
 /* Footer */
 .footer {
+    grid-area: footer;
     border-top: var(--color-2) 2px solid;
-    margin: 2rem 0 0 0;
     padding: 2rem 0;
     display: flex;
     flex-flow: column wrap;
